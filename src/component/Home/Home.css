@@ -1,0 +1,12 @@
+main{
+    border: 1px solid #fff;
+    height: auto;
+    height: 500px;
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    padding: 2% 2% 2% 2%;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 5%;
+}
