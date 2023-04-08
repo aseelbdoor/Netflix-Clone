@@ -1,0 +1,83 @@
+header{
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+header nav img{
+    width: 150px;
+    height: 50px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    width: 90%;
+}
+
+header nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header div{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 5%;
+    width: 95%;
+}
+
+header div ul li a{
+    text-decoration: none;
+}
+
+header div ul .personalProfile{
+    width: 11%;
+}
+
+header div ul .personalProfile a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5%;
+}
+
+header div ul .personalProfile i{
+    display: inline;
+}
+
+header div ul li a img{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    display: inline;
+}
