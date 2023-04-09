@@ -1,4 +1,33 @@
 footer{
+    width: 100%;
     grid-area: footer;
-    border: 1px solid red;
+    border-top: 5px solid rgb(0, 0, 0);
+    display: flex;
+    padding: 5% 5%;
+    justify-content: center;
+    gap: 15%;
+    font-family: sans-serif;
+}
+
+footer div{
+    width: 350px;
+}
+
+footer div ul li{
+    display: block;
+    margin: 2% 0;
+}
+
+footer div ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5% 5%;
+}
+
+footer div ul li a{
+    color: rgb(136, 132, 132);
 }

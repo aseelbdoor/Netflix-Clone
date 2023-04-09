@@ -1,0 +1,7 @@
+.swiperGroup{
+    position: static !important;
+    display: flex !important;
+    justify-content: flex-start;
+    gap: 1%;
+}
+
