@@ -1,15 +1,16 @@
 section {
     display: grid;
     justify-content: flex-start;
-    width: 95%;
-    height: 900px;
+    width: 100%;
+    padding: 0 2%;
 
 }
 
-section div{
+section .title{
     text-align: left;
-    border: 2px solid green;
     height: 30px;
+    display: grid;
+    justify-content: flex-start;
 }
 
 section div h1 {
@@ -17,12 +18,13 @@ section div h1 {
 }
 
 .swiper {
-    border: 2px solid red;
     width: 100%;
-    height: 90%;
-    position: initial;
+    margin: 0 !important;
+    padding: 0 5%;
+    position: static !important;
 }
 .swiper-slide {
-    color: #fff;
-    font-size: 18px;
+    margin: 0 !important;
+    position: static !important;
 }
+

@@ -1,7 +1,6 @@
 // @ts-nocheck
 import "./MovieList.css";
 import Movie from "../Movie/Movie";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -12,30 +11,34 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
 export default function MovieList(props) {
+    let newArr=[];
+    let combine=[];
+    for (let i = 0; i < props.data.length; i++) {
+        const element = props.data[i];
+        combine.push(element);
+        if(combine.length===4){
+            newArr.push(combine);
+            combine=[];
+        }
+    }
+    if(combine>0){
+        newArr.push(combine);
+    }
     return (
         <section>
             <div className="title">
                 <h1>Trending Now</h1>
             </div>
-            {/* <div className="movieSwiper">
+            <Swiper style={{'position':'static'}} navigation={true} modules={[Navigation]} className="mySwiper">
                 {
-                    props.data.map((element)=>{
-                        return(
-                            <Link to={`/${element.id}`}><Movie name={element.title} image={element.poster_path} overview={element.overview} /></Link>
+                    newArr.map((element) => {
+                        return (
+                            <SwiperSlide style={{'position':'static'}}>
+                                <Movie groupData={element} style={{'position':'static'}} / >
+                            </SwiperSlide>
                         )
                     })
                 }
-            </div> */}
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
             </Swiper>
         </section>
     )

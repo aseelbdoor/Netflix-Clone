@@ -2,14 +2,6 @@ body{
   background: #000000e7;
 }
 
-.mask{
-  background: rgb(0 0 0 / 40%);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
 
 .container{
   display: grid;
