@@ -11,7 +11,7 @@ export default function Navbar(){
                         <li><Link to="/">TV Shows</Link></li>
                         <li><Link to="/">Movies</Link></li>
                         <li><Link to="/">Recently Added</Link></li>
-                        <li><Link to="/">My List</Link></li>
+                        <li><Link to="/favList">My List</Link></li>
                     </ul>
                 </nav>
                 <div>
