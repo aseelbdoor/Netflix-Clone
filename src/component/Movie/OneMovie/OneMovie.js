@@ -8,13 +8,13 @@ export default function OneMovie(props) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    let url=`https://image.tmdb.org/t/p/w300${props.image}`;
+    let url=`https://image.tmdb.org/t/p/w300${props.data.poster_path}`;
     return (
         <>
             <div onClick={handleShow} style={{ backgroundImage: `url(${url})` }}>
                 <img src={logo} alt="logo" />
             </div>
-            <ModelMovie show={show} handleClose={handleClose} image={url} title={props.title} overview={props.overview} />
+            <ModelMovie show={show} handleClose={handleClose} image={url} data={props.data} />
         </>
     )
 

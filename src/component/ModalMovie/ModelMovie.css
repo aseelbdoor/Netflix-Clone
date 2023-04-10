@@ -11,13 +11,15 @@
 
 .pop .space{
     background-color: white;
-    padding: 5% 3% 5% 3%;
-    width: 600px;
+    padding: 5% 0% 5% 3%;
+    width: 620px;
     height: 500px;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .pop .space figure{
@@ -41,11 +43,13 @@
     text-align: left;
     height: 89%;
     margin-top: 7%;
-    width: 50%;
+    width: 51%;
     display: flex;
     flex-direction: column;
     gap: 7%;
+    padding-right: 2%;
     font-family: sans-serif;
+    overflow-y: scroll;
 }
 
 .pop .space .info h1{
@@ -62,19 +66,36 @@
     text-align: left;
 }
 
-.pop .space .info textarea{
+textarea{
     resize: none;
     border: none;
-    width: 100%;
+    width: 95%;
     height: 60px;
     text-align: left;
     padding: 2% 2% 2% 5%;
     border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
     color: #333;
     background-color: #e0e0e0bb;
 }
 
-.pop .space .info textarea:focus{
+fieldset{
+    border: 2px solid #49edff;
+    border-radius: 5px;
+    padding: 4% 2%;
+    font-size: 15px;
+}
+
+legend{
+    color: #757575;
+    text-align: left;
+    text-align:start;
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+textarea:focus{
     border: none;
     box-shadow: 0px 0px 10px red;
 }
@@ -82,17 +103,26 @@
 .pop .space .info .buttons{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.pop .space .info .buttons div{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 46%;
 }
 
 .pop .space .info .buttons button{
     cursor: pointer;
     padding: 3% 6%;
-    width: 45%;
     border-radius: 15px;
     font-weight: bold;
+    width: 46%;
 }
 
 .pop .close{
+    
     background-color: red;
     border:2px solid red;
 }
@@ -106,6 +136,8 @@
 .pop .add{
     background-color: #49edff;
     border:2px solid #49edff;
+    width: 100%;
+    height: 100%;
 }
 
 .pop .add:hover{
